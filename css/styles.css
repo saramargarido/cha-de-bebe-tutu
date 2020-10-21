@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
 
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
 /* LETTER */
 
 .word {
-	font-family: 'Anton', sans-serif;
+	font-family: 'Luckiest Guy', cursive;;
   perspective: 1000px;
   position: relative; 
   z-index: 100;
@@ -112,6 +114,21 @@
 	
 	90% {
 		transform: translateY(-48vh) scaleY(4);
+	}
+}
+
+.word span:nth-child(6).active {
+	animation: balance-inverse 1.5s ease-out;
+	transform-origin: bottom left;
+}
+
+@keyframes balance-inverse {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+	
+	30%, 60% {
+		transform: rotate(45deg);
 	}
 }
 
