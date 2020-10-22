@@ -4,6 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 /* LETTER */
 
 .word {
@@ -300,12 +306,13 @@ a {
 }
 .waveWrapper {
   overflow: hidden;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
   margin: auto;
+  min-height: 100vh;
 }
 .waveWrapperInner {
   position: absolute;
