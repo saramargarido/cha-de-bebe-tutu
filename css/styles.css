@@ -249,12 +249,38 @@ a {
 
 .about {
 	width: 80%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
-.content p {
+
+.text-about {
+	background: url('../img/cloud-computing.svg');
+	background-size: cover;
+	/* background-position: bottom; */
+	background-repeat: no-repeat;
+	position: relative;
+}
+.text-about p {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	line-height: 26px;
-	padding: 50px 0 !important;
+	padding: 50px !important;
+	/* background-color: rgba(255, 255, 255, 0.2); */
+	/* background: url('../img/cloud-computing.svg') no-repeat cover ; */
+	/* background-size: cover;
+	background-repeat: no-repeat; */
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	position: absolute;
+	bottom: 0;
+}
+
+.image-about img {
+	width: 80%;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
 }
 
 
