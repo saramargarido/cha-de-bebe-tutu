@@ -204,20 +204,6 @@ a {
 	}
 }
 
-@media (max-width: 425px) {
-	.word span {
-		font-size: 50px;
-	}
-	.fish-button img {
-		width: 50px;	
-	}
-	.word,
-	.menu {
-		float: none;
-	}
-}
-
-
 
 .fish-button img:hover {
 	animation: balance-fish 1.5s linear infinite;
@@ -253,6 +239,19 @@ a {
 	width: 100%
 }
 
+.submarine {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: balance-fish 7s linear infinite;
+}
+
+.submarine img {
+	width: 60%;
+	margin-top: 100px;
+	margin-left: -150px;
+}
+/* 
 .about {
 	width: 80%;
 	display: grid;
@@ -262,7 +261,6 @@ a {
 .text-about {
 	background: url('../img/cloud-computing.svg');
 	background-size: cover;
-	/* background-position: bottom; */
 	background-repeat: no-repeat;
 	position: relative;
 }
@@ -271,10 +269,6 @@ a {
 	font-size: 16px;
 	line-height: 26px;
 	padding: 50px !important;
-	/* background-color: rgba(255, 255, 255, 0.2); */
-	/* background: url('../img/cloud-computing.svg') no-repeat cover ; */
-	/* background-size: cover;
-	background-repeat: no-repeat; */
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 20px;
 	position: absolute;
@@ -287,7 +281,7 @@ a {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
-}
+} */
 
 
 
@@ -594,4 +588,24 @@ animation: move-wave 3s;
 	left: 0;
 	position: absolute;
 	width: 100px;
+}
+
+/* ===== @MEDIAS ===== */
+
+@media (max-width: 425px) {
+	.word span {
+		font-size: 50px;
+	}
+	.fish-button img {
+		width: 50px;	
+	}
+	.word,
+	.menu {
+		float: none;
+	}
+
+	.submarine img {
+		width: 95%;
+		margin-left: 0;
+	}
 }
