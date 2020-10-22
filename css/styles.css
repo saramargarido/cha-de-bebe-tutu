@@ -2,18 +2,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 /* LETTER */
 
 .word {
-	font-family: 'Luckiest Guy', cursive;;
-  perspective: 1000px;
-  position: relative; 
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4%;
-  color: #20588b;
+	font-family: 'Luckiest Guy', cursive;
+	perspective: 1000px;
+	position: relative; 
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2%;
+	color: #20588b;
+	float: left;
 }
 
 .word span {
@@ -145,15 +148,119 @@
 	margin: 0;
 } */
 
-.fixed {
-	position: fixed;
-	top: 40px;
-	left: 50%;
-	transform: translateX(-50%);
+/* ===== MENU ===== */
+
+.menu {
+	position: relative;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: right;
+	margin: 1% 2%;
+}
+
+.menu ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	margin: 0 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #20588b;
+	font-family: 'Luckiest Guy', cursive;
+	cursor: pointer;
+}
+
+.fish-button img {
+	width: 100px;	
+}
+
+@media (max-width: 1024px) {
+	.word span {
+		font-size: 80px;
+	}
+	.fish-button img {
+		width: 80px;	
+	}
+}
+
+@media (max-width: 425px) {
+	.word span {
+		font-size: 50px;
+	}
+	.fish-button img {
+		width: 50px;	
+	}
+	.word,
+	.menu {
+		float: none;
+	}
 }
 
 
-/* WAVES */
+
+.fish-button img:hover {
+	animation: balance-fish 1.5s linear infinite;
+}
+
+@keyframes balance-fish {
+	0%, 100% {
+		/* transform: translateY(-1vh) scaleY(1); */
+		transform: rotate(5deg);
+	}
+	
+	30% {
+		transform: rotate(1deg);
+		transform: translateY(-1vh) scaleY(1);
+	}
+
+	60% {
+		/* transform: translateY(-1vh) scaleY(1); */
+		transform: rotate(-5deg);
+		
+	}
+
+}
+
+/* ===== CONTENT ===== */
+
+.content {
+	position: relative;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%
+}
+
+.about {
+	width: 80%;
+}
+.content p {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	padding: 50px 0 !important;
+}
+
+
+
+/* ====== WAVES ====== */
+
 @keyframes move_wave {
   0% {
       transform: translateX(0) translateZ(0) scaleY(1)
