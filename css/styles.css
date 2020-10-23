@@ -173,11 +173,13 @@
 	padding: 0;
 }
 
-p {
+p,
+h1 {
 	margin: 0;
 	padding: 0;
 	text-align: center;
 }
+
 
 li {
 	list-style: none;
@@ -194,16 +196,6 @@ a {
 .fish-button img {
 	width: 100px;	
 }
-
-@media (max-width: 1024px) {
-	.word span {
-		font-size: 80px;
-	}
-	.fish-button img {
-		width: 80px;	
-	}
-}
-
 
 .fish-button img:hover {
 	animation: balance-fish 1.5s linear infinite;
@@ -234,6 +226,7 @@ a {
 	position: relative;
 	z-index: 100;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%
@@ -248,23 +241,31 @@ a {
 
 .submarine img {
 	width: 60%;
-	margin-top: 100px;
+	/* margin-top: 10px; */
 	margin-left: -150px;
 }
-/* 
+
 .about {
+	margin-top: 150px;
 	width: 80%;
+	font-size: 18px;
+	line-height: 28px;
+	/* font-weight: bold; */
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
+
 .text-about {
-	background: url('../img/cloud-computing.svg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-.text-about p {
+/* .text-about p {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	line-height: 26px;
@@ -273,15 +274,43 @@ a {
 	border-radius: 20px;
 	position: absolute;
 	bottom: 0;
+} */
+.button-about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: bounce 0.5s alternate infinite ease-in;
 }
 
-.image-about img {
-	width: 80%;
-	border-radius: 20px;
-	display: flex;
-	justify-content: center;
+	@keyframes bounce {
+		0% {
+			transform: translateY(-20%);
+		}
+		100% {
+			transform: translateY(5%);
+		}
+	}
+
+
+.button-about img {
+	width: 40%;
+	/* border-radius: 20px; */
+
 	margin: 0 auto;
-} */
+}
+
+.gifts {
+	margin-top: 80px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-gift img {
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+}
+
 
 
 
@@ -360,6 +389,11 @@ animation: move-wave 3s;
 
 
 /* ===== BUBBLES ===== */
+.div-bubble {
+    position: absolute;
+    top: 20%;
+	width: 100%;
+}
 
 /* KEYFRAMES */
 
@@ -433,9 +467,9 @@ animation: move-wave 3s;
 }
 
 .x2 {
-    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -webkit-animation: animateBubble 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
 	
 	left: 5%;
 	top: 80%;
@@ -446,9 +480,9 @@ animation: move-wave 3s;
 }
 
 .x3 {
-    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -webkit-animation: animateBubble 35s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 35s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 35s linear infinite, sideWays 2s ease-in-out infinite alternate;
 	
 	left: 10%;
 	top: 40%;
@@ -472,9 +506,9 @@ animation: move-wave 3s;
 }
 
 .x5 {
-    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
 	
 	left: 30%;
 	top: 50%;
@@ -498,9 +532,9 @@ animation: move-wave 3s;
 }
 
 .x7 {
-    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -webkit-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
 	
 	left: 65%;
 	top: 70%;
@@ -563,7 +597,7 @@ animation: move-wave 3s;
     height: 100px;
 	position: absolute;
 	width: 100px;
-	z-index: 200;
+	z-index: 20;
 }
 
 .bubble:after {
@@ -590,11 +624,57 @@ animation: move-wave 3s;
 	width: 100px;
 }
 
+/* ===== FISHS ===== */
+.fish {
+    background-image: url('../img/fish.png');
+    width: 235px;
+    height: 104px;
+    margin-left: -235px;
+    position: absolute; 
+    animation: myfirst 24s;
+    -webkit-animation: myfirst 24s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+	z-index: 20;
+}
+
+
+#fish {
+    top: 200px;
+}
+
+#fish2 {
+	background-image: url('../img/fish-inverse.png');
+	animation-direction: reverse;
+    top: 600px;
+    animation-delay: 10s;
+    -webkit-animation-delay: 10s;
+}
+
+
+@keyframes myfirst
+{
+    0% {
+		margin-left: -235px
+	}
+    70% {
+		margin-left: 100%;
+	}
+    100% {
+		margin-left: 100%;
+	}
+}
+
+
+
 /* ===== @MEDIAS ===== */
 
 @media (max-width: 425px) {
 	.word span {
 		font-size: 50px;
+		margin: 30px 0;
 	}
 	.fish-button img {
 		width: 50px;	
@@ -607,5 +687,37 @@ animation: move-wave 3s;
 	.submarine img {
 		width: 95%;
 		margin-left: 0;
+		margin-top: 20px;
+	}
+
+	.display-none {
+		display: none;
+	}
+
+	.about {
+		margin-top: 60px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.word span {
+		font-size: 80px;
+	}
+	.fish-button img {
+		width: 80px;	
+	}
+
+	.about {
+		grid-template-columns: 100%;
+	}
+
+	.text-about p {
+		font-size: 12px;
+		line-height: 22px;
+	}
+
+	.button-about img {
+		width: 30%;
+		margin-top: 50px;
 	}
 }
