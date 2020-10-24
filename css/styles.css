@@ -174,7 +174,8 @@
 }
 
 p,
-h1 {
+h1,
+h3 {
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -282,16 +283,6 @@ a {
 	animation: bounce 0.5s alternate infinite ease-in;
 }
 
-	@keyframes bounce {
-		0% {
-			transform: translateY(-20%);
-		}
-		100% {
-			transform: translateY(5%);
-		}
-	}
-
-
 .button-about img {
 	width: 40%;
 	/* border-radius: 20px; */
@@ -302,13 +293,107 @@ a {
 .gifts {
 	margin-top: 80px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+.box-gift {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .box-gift img {
 	display: flex;
-	width: 80%;
-	margin: 0 auto;
+	width: 30%;
+	margin: 0 auto 20px;
+}
+
+.box-gift:nth-child(1) img:hover {
+	animation: jump 0.5s alternate infinite ease-in;
+	cursor: pointer;
+}
+
+@keyframes jump {
+	0% {
+		transform: translateY(-20%);
+	}
+	100% {
+		transform: translateY(5%);
+	}
+}
+
+.box-gift:nth-child(2) img:hover {
+	animation: shake 1s alternate infinite ease-in;
+	cursor: pointer;
+}
+
+@keyframes shake {
+	0% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+
+.box-gift:nth-child(3) img:hover {
+	animation: bounce 0.5s alternate infinite ease-in;
+	cursor: pointer;
+
+}
+
+@keyframes bounce {
+	0%, 100% {
+		/* transform: translateY(-1vh) scaleY(1); */
+		transform: rotate(5deg);
+	}
+	
+	30% {
+		transform: rotate(1deg);
+		transform: translateY(-1vh) scaleY(1);
+	}
+
+	60% {
+		/* transform: translateY(-1vh) scaleY(1); */
+		transform: rotate(-5deg);
+		
+	}
+}
+
+.box-gift:nth-child(4) img{
+	width: 10%;
+}
+.box-gift:nth-child(4) img:hover {
+	animation: zoom 1s alternate ease-in;
+	animation-fill-mode: forwards;
+	cursor: pointer;
+
+}
+
+@keyframes zoom {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: translateY(-5vh) scale(3);
+	}
+
+}
+
+
+
+.box-gift p,
+h3,
+strong {
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+	margin-top: 1%;
+}
+
+.box-gift strong {
+	display: block;
+	text-align: center;
+	margin-top: 2%;
 }
 
 
@@ -696,6 +781,13 @@ animation: move-wave 3s;
 
 	.about {
 		margin-top: 60px;
+	}
+
+	@keyframes zoom {
+		100% {
+			transform: translateY(-5px) scale(3);
+		}
+	
 	}
 }
 
