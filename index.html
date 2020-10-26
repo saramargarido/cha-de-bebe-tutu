@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chá de bebê do Tutu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/styles.css">
     <script src="app.js" defer></script>
 </head>
@@ -30,17 +31,17 @@
     </li>
     <li>
       <span class="fish-button">
-        <a href="#">
+        <a href="#about">
           <img src="img/fish-17.svg" alt="">
-          <p>Tutu</p>
+          <p>Sobre</p>
         </a>
       </span>
     </li>
     <li>
       <span class="fish-button">
+        <a href="#gift">
         <img src="img/fish-5.svg" alt="">
-        <a href="#">
-          <p>Tutu</p>
+          <p>Presente</p>
         </a>
       </span>
     </li>
@@ -52,10 +53,10 @@
   <div class="submarine">
     <img src="img/submarine.png" alt="">
   </div>
-
+<div id="about"></div>
   <!-- <a href="#about">Sobre</a> -->
 
-  <div class="about" id="about">
+  <div class="about" id="">
     
     <div class="text-about">
       <h1>Oi pessoal!</h1><br>
@@ -73,34 +74,34 @@
     </div> -->
 
   </div>
-  <div class="title">
+  <div class="title" id="gift">
   <h1>Ebaaaa, presenteeeeee!</h1>
   <p>Confere algumas dicas do que quero ganhar:</p>
   </div>
   <div class="gifts">
-    <div class="box-gift">
+    <div class="box-gift card" id="R$50,00">
       <img src="img/diaper.svg" alt="">
       <h3>Fraldas!!</h3>
       <p>Aquele presente sempre bem-vindo!</p>
       <strong>R$50,00</strong>
     </div>
-    <div class="box-gift">
+    <div class="box-gift card" id="R$100,00">
       <img src="img/feeding-bottle.svg" alt="">
       <h3>Kit alimentação!!</h3>
       <p>Pra eu crescer forte e saudável!</p>
       <strong>R$100,00</strong>
     </div>
-    <div class="box-gift">
+    <div class="box-gift card margin-y" id="R$200,00">
       <img src="img/pijama.svg" alt="">
       <h3>Enxoval!!</h3>
       <p>Quero dizer que serei um menino de estilo!</p>
       <strong>R$200,00</strong>
     </div>
-    <div class="box-gift">
+    <div class="box-gift card margin-y" id="R$400,00">
       <img src="img/gift.svg" alt="">
       <h3>Uma lembrancinha...</h3>
       <p>Só pra lembrar... valor simbólico mesmo.</p>
-      <strong>R$500,00</strong>
+      <strong>R$400,00</strong>
     </div>
 
 
@@ -135,6 +136,24 @@
 
     </div>
 
-    
-</body>
+    <div class="modal-overlay">
+      <div class="modal">
+
+          <a class="close-modal">
+              <i class="material-icons">close</i>
+          </a>
+
+          <div class="modal-content">
+             <img src="img/qr-code.svg" alt="">
+             <p><strong>Agência:</strong> 1256-6</p>
+             <p><strong>Conta: </strong>123569-78</p>
+             <p><strong>Nome completo</strong></p>
+             <p><strong>CPF: 321.456.987-21</strong></p>
+             <p><strong>Valor:</strong> <span class="price">$XX,XX</span></p>
+          </div>
+      </div>
+    </div>
+
+    <script src="modal.js"></script>
+  </body>
 </html>
