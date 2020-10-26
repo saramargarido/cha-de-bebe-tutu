@@ -292,6 +292,8 @@ a {
 	margin-top: 80px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	width: 60%;
+	gap: 30px;
 }
 
 .box-gift {
@@ -302,7 +304,7 @@ a {
 
 .box-gift img {
 	display: flex;
-	width: 30%;
+	width: 40%;
 	margin: 0 auto 20px;
 }
 
@@ -837,6 +839,11 @@ animation: move-wave 3s;
 	.modal img {
 		width: 30%;
 	}
+
+	.box-gift img {
+		width: 50%;
+	}
+	
 	
 }
 
@@ -891,6 +898,11 @@ animation: move-wave 3s;
 
 	.modal {
 		width: 90%;
+	}
+	
+	.gifts {
+		grid-template-columns: 1fr;
+		gap: 60px;
 	}
 }
 
