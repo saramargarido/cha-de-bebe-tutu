@@ -401,6 +401,22 @@ a {
 	margin-bottom: 100px;
 }
 
+/* ==== Deep oceal ==== */
+/* .footer {
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer img {
+	width: 80px;
+} */
+
+/* .footer img {
+	display: flex;
+	flex-direction: row;
+} */
 
 /* ====== WAVES ====== */
 
@@ -479,7 +495,7 @@ animation: move-wave 3s;
 /* ===== BUBBLES ===== */
 .div-bubble {
     position: absolute;
-    top: 20%;
+    top: 50%;
 	width: 100%;
 }
 
@@ -730,13 +746,13 @@ animation: move-wave 3s;
 
 
 #fish {
-    top: 200px;
+    top: 25%;
 }
 
 #fish2 {
 	background-image: url('../img/fish-inverse.png');
 	animation-direction: reverse;
-    top: 600px;
+    top: 85%;
     animation-delay: 10s;
     -webkit-animation-delay: 10s;
 }
@@ -903,6 +919,31 @@ animation: move-wave 3s;
 	.gifts {
 		grid-template-columns: 1fr;
 		gap: 60px;
+	}
+
+	.box-gift:nth-child(1) img {
+		animation: jump 0.5s alternate infinite ease-in;
+		cursor: pointer;
+	}
+	
+	.box-gift:nth-child(2) img {
+		animation: shake 1s alternate infinite ease-in;
+		cursor: pointer;
+	}
+	
+	.box-gift:nth-child(3) img {
+		animation: bounce 0.5s alternate infinite ease-in;
+		cursor: pointer;
+	
+	}
+
+	.box-gift:nth-child(4) img {
+		width: 30%;
+		margin-bottom: 100px;
+		animation: zoom 2s alternate ease-in;
+		animation-fill-mode: forwards;
+		cursor: pointer;
+	
 	}
 }
 
