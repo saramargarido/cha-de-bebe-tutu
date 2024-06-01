@@ -1,168 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chá de bebê do Tutu</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="app.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chá de bebê do Tutu</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="app.js" defer></script>
 </head>
+
 <body>
   <div class="waveWrapper waveAnimation">
-  <header>
-    <div class="word">
+    <header>
+      <div class="word">
         <span>A</span>
-        <span>R</span>
-        <span>T</span>
-        <span>H</span>
-        <span>U</span>
-        <span>R</span>
+        <span>L</span>
+        <span>I</span>
+        <span>C</span>
+        <span>E</span>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <span class="menu-button">
+              <a href="#about">
+                <img src="img/cat.webp" alt="">
+                <p>Sobre</p>
+              </a>
+            </span>
+          </li>
+          <li>
+            <span class="menu-button">
+              <a href="#gift">
+                <img src="img/rabbit.png">
+                <p>Presente</p>
+              </a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="content">
+      <div class="alice">
+        <img src="img/alice.svg" alt="">
+      </div>
+      <div id="about"></div>
+
+      <div class="about" id="">
+
+        <div class="text-about">
+          <h1>Oi pessoal!</h1><br>
+          <p>
+            Agora falta pouco para eu chegar! <br>
+
+            Essa é a minha <strong> festa virtual. </strong> Não sei muito bem o que é isso, mas logo logo vou poder
+            conhecer todos vocês. Ainda sou muito pequena e estou aqui
+            dentro da barriga da mamãe, mas já posso ouvir as mensagens de vocês! Então, se quiserem me mandar um
+            presente continuem
+            navegando para escolher. Ahhh... não esqueçam de mandar uma mensagem de áudio no whatsapp pro papai ou pra
+            mamãe pra eu
+            poder conhecer a sua voz. Muito obrigada pelo carinho!
+            <br><br>
+          <h2>Beijos Cici</h2>
+          </p>
+        </div>
+
+      </div>
+      <div class="title" id="gift">
+        <h1>Ebaaaa, presenteeeeee!</h1>
+        <p>Confere algumas dicas do que quero ganhar:</p>
+      </div>
+      <div class="gifts">
+        <div class="box-gift card" id="R$50,00">
+          <img src="img/diaper.svg" id="qr50" alt="">
+          <h3>Fraldas!!</h3>
+          <p>Aquele presente sempre bem-vindo!</p>
+          <strong>R$50,00</strong>
+        </div>
+        <div class="box-gift card" id="R$100,00">
+          <img src="img/feeding-bottle.svg" id="qr100" alt="">
+          <h3>Kit alimentação!!</h3>
+          <p>Pra eu crescer forte e saudável!</p>
+          <strong>R$100,00</strong>
+        </div>
+        <div class="box-gift card margin-y" id="R$200,00">
+          <img src="img/pijama.svg" id="qr200" alt="">
+          <h3>Enxoval!!</h3>
+          <p>Quero dizer que serei um menino de estilo!</p>
+          <strong>R$200,00</strong>
+        </div>
+        <div class="box-gift card margin-y" id="R$450,00">
+          <img src="img/gift.svg" id="qr450" alt="">
+          <h3>Uma lembrancinha...</h3>
+          <p>Só pra lembrar... valor simbólico mesmo.</p>
+          <strong>R$450,00</strong>
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <div class="waveWrapperInner bgTop">
+      <div class="wave waveTop" style="background-image: url('img/wave.svg')"></div>
     </div>
-<div class="menu">
-  <ul>
-    <li>
-      <span class="fish-button">
-      <a href="#">
-        <img src="img/fish-4.svg" alt="">
-        <p>Tutu</p>
+    <div class="waveWrapperInner bgMiddle">
+      <div class="wave waveMiddle" style="background-image: url('img/wave.svg')"></div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+      <div class="wave waveBottom" style="background-image: url('img/wave.svg')"></div>
+    </div>
+
+    <div id="background-wrap" class="div-bubble">
+      <div class="bubble x1"></div>
+      <div class="bubble x2"></div>
+      <div class="bubble x3 display-none"></div>
+      <div class="bubble x4"></div>
+      <div class="bubble x5 display-none"></div>
+      <div class="bubble x6 display-none"></div>
+      <div class="bubble x7"></div>
+      <div class="bubble x8"></div>
+      <div class="bubble x9 display-none"></div>
+      <div class="bubble x10"></div>
+    </div>
+
+  </div>
+
+  <div class="modal-overlay">
+    <div class="modal">
+
+      <a class="close-modal">
+        <i class="material-icons">close</i>
       </a>
-      </span>
-    </li>
-    <li>
-      <span class="fish-button">
-        <a href="#about">
-          <img src="img/fish-17.svg" alt="">
-          <p>Sobre</p>
-        </a>
-      </span>
-    </li>
-    <li>
-      <span class="fish-button">
-        <a href="#gift">
-        <img src="img/fish-5.svg" alt="">
-          <p>Presente</p>
-        </a>
-      </span>
-    </li>
-  </ul>
-</div>
-</header>
 
-<section class="content">
-  <div class="submarine">
-    <img src="img/submarine.png" alt="">
-  </div>
-<div id="about"></div>
-  <!-- <a href="#about">Sobre</a> -->
-
-  <div class="about" id="">
-    
-    <div class="text-about">
-      <h1>Oi pessoal!</h1><br>
-      <p>      
-        Agora falta pouco para eu chegar! <br>
-        
-        Essa é a minha <strong> festa virtual. </strong> Não sei muito bem o que é isso mas mamãe e papai explicaram que tem um bixinho aí fora e vai ter que ser assim por um tempo, pra eu poder conhecer todos vocês depois. Ainda sou muito pequeno e estou aqui dentro da barriga da mamãe, mas já posso ouvir as mensagens de vocês! Então, se quiserem me mandar um presente continuem navegando para escolher. Ahhh... não esqueçam de mandar uma mensagem de áudio no whatsapp pro papai ou pra mamãe pra eu poder conhecer a sua voz! 
-        Muito obrigado pelo carinho e logo logo estarei do lado de fora pra conhecer todo mundo!
-        <br><br>
-        <h2>Beijos Tutu</h2>
-      </p>
-    </div>
-    <!-- <div class="button-about">
-      <img src="img/gift.svg" alt="">
-    </div> -->
-
-  </div>
-  <div class="title" id="gift">
-  <h1>Ebaaaa, presenteeeeee!</h1>
-  <p>Confere algumas dicas do que quero ganhar:</p>
-  </div>
-  <div class="gifts">
-    <div class="box-gift card" id="R$50,00">
-      <img src="img/diaper.svg" alt="">
-      <h3>Fraldas!!</h3>
-      <p>Aquele presente sempre bem-vindo!</p>
-      <strong>R$50,00</strong>
-    </div>
-    <div class="box-gift card" id="R$100,00">
-      <img src="img/feeding-bottle.svg" alt="">
-      <h3>Kit alimentação!!</h3>
-      <p>Pra eu crescer forte e saudável!</p>
-      <strong>R$100,00</strong>
-    </div>
-    <div class="box-gift card margin-y" id="R$200,00">
-      <img src="img/pijama.svg" alt="">
-      <h3>Enxoval!!</h3>
-      <p>Quero dizer que serei um menino de estilo!</p>
-      <strong>R$200,00</strong>
-    </div>
-    <div class="box-gift card margin-y" id="R$400,00">
-      <img src="img/gift.svg" alt="">
-      <h3>Uma lembrancinha...</h3>
-      <p>Só pra lembrar... valor simbólico mesmo.</p>
-      <strong>R$400,00</strong>
-    </div>
-
-
-  </div>
-  <!-- <div class="footer">
-    <img src="img/fish-17.svg" alt="">
-    <img src="img/fish-17.svg" alt="">
-    <img src="img/fish-17.svg" alt="">
-    <img src="img/fish-17.svg" alt="">
-    <img src="img/fish-17.svg" alt="">
-    <img src="img/fish-17.svg" alt="">
-    <img src="img/fish-17.svg" alt="">
-  </div> -->
-</section>
-  
-      <div class="waveWrapperInner bgTop">
-        <div class="wave waveTop" style="background-image: url('img/wave.svg')"></div>
-      </div>
-      <div class="waveWrapperInner bgMiddle">
-        <div class="wave waveMiddle" style="background-image: url('img/wave.svg')"></div>
-      </div>
-      <div class="waveWrapperInner bgBottom">
-        <div class="wave waveBottom" style="background-image: url('img/wave.svg')"></div>
-      </div>
-
-      <div class="fish" id="fish"></div>
-      <div class="fish" id="fish2"></div>
-
-      <div id="background-wrap" class="div-bubble">
-        <div class="bubble x1"></div>
-        <div class="bubble x2"></div>
-        <div class="bubble x3 display-none"></div>
-        <div class="bubble x4"></div>
-        <div class="bubble x5 display-none"></div>
-        <div class="bubble x6 display-none"></div>
-        <div class="bubble x7"></div>
-        <div class="bubble x8"></div>
-        <div class="bubble x9 display-none"></div>
-        <div class="bubble x10"></div>
-    </div>
-
-    </div>
-
-    <div class="modal-overlay">
-      <div class="modal">
-
-          <a class="close-modal">
-              <i class="material-icons">close</i>
-          </a>
-
-          <div class="modal-content">
-             <img src="img/qr-code.svg" alt="">
-             <p><strong>Agência:</strong> 1256-6</p>
-             <p><strong>Conta: </strong>123569-78</p>
-             <p><strong>Nome completo</strong></p>
-             <p><strong>CPF: 321.456.987-21</strong></p>
-             <p><strong>Valor:</strong> <span class="price">$XX,XX</span></p>
-          </div>
+      <div class="modal-content">
+        <img src="img/qr-code.svg" alt="">
       </div>
     </div>
+  </div>
 
-    <script src="modal.js"></script>
-  </body>
+  <script src="modal.js"></script>
+</body>
+
 </html>

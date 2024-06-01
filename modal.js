@@ -6,9 +6,9 @@ const cards = document.querySelectorAll('.card')
 
 for (let card of cards) {
     card.addEventListener('click', function(){
-        const price = card.getAttribute('id')
+        const qrcode = card.querySelector('img').getAttribute('id')
         modalOverlay.classList.add('active')
-        modalOverlay.querySelector('.price').innerHTML = `${price}`
+        modalOverlay.querySelector('img').src = `img/${qrcode}.jpg`
     })
 }
 
